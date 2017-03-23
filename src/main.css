@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Space+Mono');
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  background-color: #DD8D91;
+}
+
+p, a {
+  font-family: 'Space Mono'
+}
+
+a {
+  padding: 1em;
+  display: inline-block;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  margin: .5em;
+  cursor: pointer;
+}
+
+a:hover {
+  background: white;
+  color: #DD8D91;
+  border-color: white;
+}
+
+a.active {
+  background: white;
+  color: #DD8D91;
+  border-color: white;
+}
+
+.product:not(:nth-child(3n)) {
+  margin-right: 25px;
+}
